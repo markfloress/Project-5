@@ -3,11 +3,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 
+import { appRoutes } from './app.routes';
+
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { RegisterComponent } from './components/register/register.component';
 import { EncountersComponent } from './components/encounters/encounters.component';
 import { ReportComponent } from './components/report/report.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -15,11 +18,12 @@ import { ReportComponent } from './components/report/report.component';
     WelcomeComponent,
     RegisterComponent,
     EncountersComponent,
-    ReportComponent
+    ReportComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule,
+    RouterModule.forRoot(appRoutes),
     ReactiveFormsModule
   ],
   providers: [],
