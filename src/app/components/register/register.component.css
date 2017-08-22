@@ -19,9 +19,27 @@ a{
   color: white;
 }
 
+.input_forms{
+  height: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-between;
+}
+
 input, select{
-  /* border: none; */
-  border: 2px solid yellow;
+   border: none; 
+  border-bottom: 1px darkgray solid;
   color: white;
   background-color: transparent;
+  width: 95%;
+  height: 50px;
+  font-size: 26px;
+  padding-left: 20px;
+}
+
+select{
+  width: 97%;
+  background: transparent;
+  color: gray;
 }
