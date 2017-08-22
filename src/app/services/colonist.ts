@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Colonist,  } from '../models/alien';
+import { Colonist, NewColonist } from '../models/colonist';
 import { Http, Headers } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
 
