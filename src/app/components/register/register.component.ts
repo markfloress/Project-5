@@ -8,7 +8,7 @@ import { JobService } from '../../services/job';
 })
 export class RegisterComponent implements OnInit {
 
-  constructor() { }
+  constructor(jobService: JobService) { }
 
   ngOnInit() {
   }

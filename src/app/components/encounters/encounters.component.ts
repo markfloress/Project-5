@@ -8,7 +8,7 @@ import { ReportService } from '../../services/encounters';
 })
 export class EncountersComponent implements OnInit {
 
-  constructor() { }
+  constructor(reportService: ReportService) { }
 
   ngOnInit() {
   }
