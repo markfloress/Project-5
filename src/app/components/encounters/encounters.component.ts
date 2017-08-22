@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ReportService } from '../../services/encounters';
 
 @Component({
   selector: 'app-encounters',
