@@ -14,3 +14,14 @@ h1{
   font-size: 54px;
   padding-top: 70px;
 } 
+
+a{
+  color: white;
+}
+
+input, select{
+  /* border: none; */
+  border: 2px solid yellow;
+  color: white;
+  background-color: transparent;
+}
