@@ -4,13 +4,18 @@ import { ReportService } from '../../services/encounters';
 @Component({
   selector: 'app-encounters',
   templateUrl: './encounters.component.html',
-  styles: []
+  styles: [],
+  providers: [
+    ReportService
+  ]
 })
 export class EncountersComponent implements OnInit {
 
-  constructor(reportService: ReportService) { }
+  constructor(private reportService: ReportService) { }
 
-  ngOnInit() {
+  async ngOnInit() {
+    const Report = await this.reportService.getReports();
+    console.log(Report);
   }
 
 }
