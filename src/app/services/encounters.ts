@@ -6,8 +6,9 @@ import 'rxjs/add/operator/toPromise';
 @Injectable()
 
 export class ReportService {
-    reportsUrl = 'https://red-wdp-api.herokuapp.com/api/mars/reports';
+    reportsUrl = 'https://red-wdp-api.herokuapp.com/api/mars/encounters';
     constructor(private http: Http){}
+
     getReports(): Promise<Report[]> {
         return this.http.get(this.reportsUrl)
                         .toPromise()
@@ -20,13 +21,13 @@ export class ReportService {
         return Promise.reject(error.message || error);
     }
 
-    newReport(report: Report): Promise<Report> {
+    newReport(newReport: NewReport): Promise<NewReport> {
     let headers = new Headers({'Content-Type': 'application/json'});
-    let body = JSON.stringify({ report });
+    let body = JSON.stringify({ newReport });
     return this.http
                .post(this.reportsUrl, body, { headers: headers })
                .toPromise()
-               .then(response => response.json().report)
+               .then(response => response.json().newReport)
                .catch(this.handleError);
     }
 }
