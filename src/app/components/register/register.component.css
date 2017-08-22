@@ -1,4 +1,4 @@
-.global_container{
+ .global_container{
   background: url('../../../../asset/mars.jpg');
   background-size: cover;
   width: 100vw;
@@ -13,4 +13,4 @@ h1{
   text-transform: uppercase;
   font-size: 54px;
   padding-top: 70px;
-}
+} 
