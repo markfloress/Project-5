@@ -9,7 +9,7 @@ export class ColonistService {
     ColonistsUrl = 'https://red-wdp-api.herokuapp.com/api/mars/colonists';
     constructor(private http: Http){}
 
-    newColonist(colonist: NewColonist): Promise<NewColonist> {
+    registerColonist(colonist: NewColonist): Promise<NewColonist> {
         const headers = new Headers({'Content-Type': 'application/json'});
         const body = JSON.stringify({ colonist });
             return this.http

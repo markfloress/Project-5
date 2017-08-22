@@ -14,11 +14,19 @@ import { ColonistService } from '../../services/colonist';
 export class RegisterComponent implements OnInit {
 
   constructor(private jobService: JobService, 
-    colonistService: ColonistService
+    private colonistService: ColonistService
   ) { }
 
   async ngOnInit() {
+    const data = {
+      name: 'data test',
+      age: '1234',
+      job_id: '1'
+    };
+
     const Job = await this.jobService.getJobs();
+    const newColonist = await this.colonistService.registerColonist(data);
     console.log(Job);
+    console.log(newColonist);
   }
 }

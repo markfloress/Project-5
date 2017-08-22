@@ -14,8 +14,8 @@ export class EncountersComponent implements OnInit {
   constructor(private reportService: ReportService) { }
 
   async ngOnInit() {
-    const Report = await this.reportService.getReports();
-    console.log(Report);
-  }
 
+    const Reports = await this.reportService.getReports();
+    console.log(Reports);
+  }
 }
