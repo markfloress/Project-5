@@ -17,7 +17,7 @@ export class ReportComponent implements OnInit {
 
   aliens: Alien[] = [];
 
-   registerForm = new FormGroup({
+  reportForm = new FormGroup({
     alien: new FormControl('Select alien type'),
     post: new FormControl('Select Occupation'),
   });
