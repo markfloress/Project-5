@@ -1,3 +1,13 @@
 <p>
   report works!
 </p>
+
+<form [formGroup]='registerForm' novalidate>
+
+  <select formControlName='job_id' class="selector">
+    <option value='blank'>Select occupation</option>
+
+    <option *ngFor='let alien of aliens' value="{{alien.id}}">{{alien.type}}</option>
+  </select>
+
+</form>

@@ -4,22 +4,42 @@
 
   <div class='input_forms'>
 
-    <input placeholder="name"/>
+    <form [formGroup]='registerForm' novalidate>
 
-    <input placeholder="age"/>
+      <!--formcontrolname grabs and must match wat was implemented on the typescript file registerForm.  -->
 
-    <select class="selector">
+    <input formControlName='name'/>
+
+    <input formControlName='age'/>
+
+    <select formControlName='job_id' class="selector">
       <option value='blank'>Select occupation</option>
-      <option>alien hunter</option>
-      <option>yoga teacher</option>
-      <option>dust farmer</option>
-      <option>front-end developer</option>
+
+     <!--ngFor HAS to be LET "random var" of "data type like jobs:something"  -->
+      <option *ngFor='let job of jobs' value="{{job.id}}">{{job.name}}</option>
     </select>
 
-    <a href='/encounters'>Next</a>
+    </form>
+
+    {{registerForm.value | json}}
 
   </div> <!-- close of input forms -->
+
+  <a href='/encounters'>Next</a>
 
   <a href=' '>Home</a>
 
 </div>   
+
+<!--[ngClass]= '{warning: data.length > 10}' 
+this will add class as soon as the length hits 10-->
+
+<!--[style.color]= "data.length > 4 ? 'white' : 'lightpink '" 
+this will add color of white when length is over 4 and keep the color lightpink before-->
+
+<!--*ngIf='data.length > 10'> your list is too long!  
+this will run the content when the data length ONLY reaches over 10-->
+
+<!--(click)=''
+angular event listener for click-->
+
