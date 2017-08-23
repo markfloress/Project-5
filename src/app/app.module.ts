@@ -12,6 +12,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { EncountersComponent } from './components/encounters/encounters.component';
 import { ReportComponent } from './components/report/report.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { AliensComponent } from './components/aliens/aliens.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     RegisterComponent,
     EncountersComponent,
     ReportComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    AliensComponent
   ],
   imports: [
     BrowserModule,

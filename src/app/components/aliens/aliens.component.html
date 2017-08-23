@@ -1,0 +1,21 @@
+<div class='global_container'>
+  <h1> register </h1>
+  <div class='input_forms'>
+
+    <form [formGroup]='registerForm' novalidate (submit)='registerAlien()'>    
+      <input type="text" formControlName='type' placeholder="type"/>
+      <input type="text" formControlName='submitted_by' placeholder="submitted_by"/>
+      <input type="number" formControlName='id' placeholder="id"/> 
+      <input type="text" formControlName='description' placeholder="description"/> 
+      <button type="submit">register</button> 
+    </form>
+    {{registerForm.value | json}}
+      {{registerForm.controls}}  
+      
+  </div> <!-- close of input forms -->
+
+  <a href='/encounters'>Next</a>
+
+  <a href=' '>Home</a>
+
+</div>   

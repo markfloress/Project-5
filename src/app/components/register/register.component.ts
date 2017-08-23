@@ -19,8 +19,8 @@ export class RegisterComponent implements OnInit {
   jobs: Job[] = [];
 
   registerForm = new FormGroup({
-    name: new FormControl('', [Validators.required, ]),
-    age: new FormControl('', [Validators.required, ]),
+    name: new FormControl('', [Validators.required, Validators.maxLength(20), Validators.minLength(2), this.noNumber]),
+    age: new FormControl('', [Validators.required, Validators.max(80), Validators.min(20)]),
     job_id: new FormControl('', [Validators.required, ]),
   });
 
@@ -43,6 +43,20 @@ export class RegisterComponent implements OnInit {
     const colonist = await this.colonistService.registerColonist(newColonist);
     console.log('colonist was saved', colonist);
   }
+
+  private noNumber(validNameRegex): ValidatorFn {
+    return (control): {[key: string]: any} =>{
+      const forbiddenName = validNameRegex.test(control.value);
+      return forbiddenName ? {'forbiddenName' : { value: control.value}} : null;
+    }
+  }
+
+  // private validAge(validAgeRegex): ValidatorFn {
+  //   return (control): {[key: string]: any} =>{
+  //     const forbiddenAge = validAgeRegex.test(control.value);
+  //     return forbiddenAge ? {'forbiddenAge' : { value: control.value}} : null;
+  //   }
+  // }
 }
 
 
