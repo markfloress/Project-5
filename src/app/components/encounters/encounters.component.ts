@@ -1,21 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 import { ReportService } from '../../services/encounters';
+import { Report } from '../../models/report';
 
 @Component({
   selector: 'app-encounters',
   templateUrl: './encounters.component.html',
-  styles: [],
+  styleUrls: ['./encounters.component.scss'],
   providers: [
     ReportService
   ]
 })
 export class EncountersComponent implements OnInit {
 
+  reports: Report[]
+
   constructor(private reportService: ReportService) { }
 
   async ngOnInit() {
 
-    const Reports = await this.reportService.getReports();
-    console.log(Reports);
+    this.reports = await this.reportService.getReports();
   }
 }

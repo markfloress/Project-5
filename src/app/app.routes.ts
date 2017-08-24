@@ -8,10 +8,10 @@ import { AliensComponent } from './components/aliens/aliens.component';
 
 
 export const appRoutes: Routes = [
-{ path: '', component: WelcomeComponent},
-{ path: 'register', component: RegisterComponent},
-{ path: 'encounters', component: EncountersComponent},
-{ path: 'report', component: ReportComponent},
-{ path: 'aliens', component: AliensComponent},
-{ path: '**', component: NotFoundComponent},
+{ path: '', component: WelcomeComponent, data: {state:'welcome'}},
+{ path: 'register', component: RegisterComponent, data: {state:'register'}},
+{ path: 'encounters', component: EncountersComponent, data: {state:'encounters'}},
+{ path: 'report', component: ReportComponent, data: {state:'report'}},
+{ path: 'aliens', component: AliensComponent, data: {state:'aliens'}},
+{ path: '**', component: NotFoundComponent, data: {state:'notfound'}},
 ];

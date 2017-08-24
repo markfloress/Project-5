@@ -1,0 +1,25 @@
+.global_container{
+  overflow: hidden;
+
+  ul{
+    height: 500px;
+    color: white;
+    width: 95%;
+    overflow: scroll;
+    overflow-x: hidden;
+    // overflow-y: hidden;
+
+    li{
+      color: white;
+      // width: 100vw;
+    }
+  }
+
+  a{
+    display: none;
+  }
+}
+
+::-webkit-scrollbar{
+      display: none;
+    }

@@ -1,5 +1,9 @@
-<p>
-  encounters works!
-</p>
-
-<a href='/report'>report</a>
+<div class='global_container'>
+   <h1> test </h1>
+  <ul ng-repeat="report | orderBy: 'date'">
+    <li *ngFor='let report of reports'>{{report.date}} - {{report.atype}}
+      <p>{{report.action}}</p>
+    <li>
+  </ul> 
+    <a href='/report'>report</a>   
+</div>

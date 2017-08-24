@@ -29,7 +29,7 @@ export class RegisterComponent implements OnInit {
 
   async ngOnInit() {
 
-    this.jobs = await this.jobService.getJobs();
+    this.jobs = await this.jobService.getJobs();  
   }
 
   async registerColonist(){
