@@ -7,6 +7,7 @@ import 'rxjs/add/operator/toPromise';
 
 export class ColonistService {
     ColonistsUrl = 'https://red-wdp-api.herokuapp.com/api/mars/colonists';
+    stored:Colonist;
     constructor(private http: Http){}
 
     registerColonist(colonist: NewColonist): Promise<NewColonist> {
@@ -15,12 +16,16 @@ export class ColonistService {
             return this.http
                 .post(this.ColonistsUrl, body, { headers: headers })
                 .toPromise()
-                .then(response => response.json().colonist)
+                .then((response) => {
+                    this.stored = response.json().colonist;
+                    return response.json().colonist})
                 .catch(this.handleError);
+    }
+    getStoredColonist(){
+        return this.stored;
     }
     private handleError(error: any): Promise<any> {
         console.error('An error occurred', error);
         return Promise.reject(error.message || error);
     }
 } 
-

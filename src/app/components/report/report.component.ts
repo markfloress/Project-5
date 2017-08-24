@@ -4,6 +4,7 @@ import { ReportService } from '../../services/encounters';
 import { Alien } from '../../models/alien';
 import { NewReport } from '../../models/report';
 import { FormControl, FormGroup } from '@angular/forms';
+import { ColonistService } from '../../services/colonist';
 
 @Component({
   selector: 'app-report',
@@ -23,7 +24,7 @@ export class ReportComponent implements OnInit {
     post: new FormControl(''),
   });
 
-  constructor(private alienService: AlienService, private reportService: ReportService) { }
+  constructor(private alienService: AlienService, private reportService: ReportService, private colonistService: ColonistService) { }
 
 
 
@@ -37,12 +38,12 @@ export class ReportComponent implements OnInit {
       atype:        this.reportForm.get('atype').value,
       date:         this.reportForm.get('date').value,
       action:       this.reportForm.get('action').value,
-      colonist_id:  this.reportForm.get('colonist_id').value,
+      colonist_id:  this.colonistService.getStoredColonist().id.toString(),
     }
-
+    console.log(this.colonistService.getStoredColonist().id.toString())
     const report = await this.reportService.newReport(newReport);
-    console.log('colonist was saved', report);
   }
+
 }
 
 // export interface NewReport {

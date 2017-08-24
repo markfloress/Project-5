@@ -8,10 +8,9 @@ import { FormControl, FormGroup, Validators, ValidatorFn } from '@angular/forms'
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
-  styleUrls: [`./register.component.css`],
+  styleUrls: [`./register.component.scss`],
   providers: [
-    JobService,
-    ColonistService
+    JobService
   ]
 })
 export class RegisterComponent implements OnInit {
@@ -41,7 +40,6 @@ export class RegisterComponent implements OnInit {
     }
 
     const colonist = await this.colonistService.registerColonist(newColonist);
-    console.log('colonist was saved', colonist);
   }
 
   private noNumber(validNameRegex): ValidatorFn {

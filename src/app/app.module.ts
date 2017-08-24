@@ -13,6 +13,7 @@ import { EncountersComponent } from './components/encounters/encounters.componen
 import { ReportComponent } from './components/report/report.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { AliensComponent } from './components/aliens/aliens.component';
+import { ColonistService } from './services/colonist';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,7 @@ import { AliensComponent } from './components/aliens/aliens.component';
     ReactiveFormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [ColonistService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
