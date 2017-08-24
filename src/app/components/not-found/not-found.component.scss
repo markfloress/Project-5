@@ -1,7 +1,10 @@
-p{
-  color: hotpink;
-}
+.global_container{
+  background-image: url('../../../../asset/images/404.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: white;
 
-body{
-  background-color: red;
+  h1{
+    color: black;
+  }
 }

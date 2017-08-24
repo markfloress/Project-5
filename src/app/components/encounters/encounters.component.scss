@@ -21,6 +21,10 @@
       color: white;
       padding-top: 30px;
 
+      span{
+        font-family: SPACECRAFT;
+      }
+
       ::before{
         content: '- ';
         padding-left: 10px;
