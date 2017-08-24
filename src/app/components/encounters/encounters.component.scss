@@ -1,17 +1,30 @@
 .global_container{
   overflow: hidden;
 
+  .encounter_action{
+    color: hotpink;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+
   ul{
-    height: 500px;
+    height: 450px;
     color: white;
     width: 95%;
     overflow: scroll;
     overflow-x: hidden;
-    // overflow-y: hidden;
+    margin: 0;
+    list-style: none;
 
     li{
       color: white;
-      // width: 100vw;
+      padding-top: 30px;
+
+      ::before{
+        content: '- ';
+        padding-left: 10px;
+      }
     }
   }
 

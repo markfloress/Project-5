@@ -1,6 +1,6 @@
 export interface Report {
   id: number;
-  date: string;
+  date: number;
   action: string;
   colonist_id: number;
   atype: string;

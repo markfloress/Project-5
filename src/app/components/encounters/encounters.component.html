@@ -1,6 +1,8 @@
 <div class='global_container'>
-   <h1> test </h1>
-  <ul ng-repeat="report | orderBy: 'date'">
+   <h1> report encounter </h1>
+   <p class='encounter_action'> tell me what happened </p>
+
+  <ul ng-repeat="date in reports | orderBy: 'date':true">
     <li *ngFor='let report of reports'>{{report.date}} - {{report.atype}}
       <p>{{report.action}}</p>
     <li>

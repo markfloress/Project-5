@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'fonts';
 
 body{
   margin: 0;
@@ -7,7 +8,7 @@ body{
 }
 
  .global_container{
-  background: url('../asset/mars.jpg');
+  background: url('../asset/images/mars.jpg');
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -20,5 +21,6 @@ h1{
   text-align: center;
   text-transform: uppercase;
   font-size: 64px;
-  padding-top: 80px;
+  padding-top: 50px;
+  font-family: SF_Distant_Galaxy;
 }
