@@ -12,6 +12,6 @@ export const appRoutes: Routes = [
 { path: 'register', component: RegisterComponent},
 { path: 'encounters', component: EncountersComponent},
 { path: 'report', component: ReportComponent},
-{ path: 'this', component: AliensComponent},
+{ path: 'aliens', component: AliensComponent},
 { path: '**', component: NotFoundComponent},
 ];

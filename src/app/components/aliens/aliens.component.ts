@@ -29,11 +29,10 @@ export class AliensComponent implements OnInit {
     const newAlienPost: NewAlien = {
       type:         this.registerForm.get('type').value,
       submitted_by: this.registerForm.get('submitted_by').value,
-      id: this.registerForm.get('id').value,
+      id:           this.registerForm.get('id').value,
       description:  this.registerForm.get('description').value,
     }
 
     const alien = await this.alienService.registerAlien(newAlienPost);
-    console.log('colonist was saved', alien);
   }
 }
