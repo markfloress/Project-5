@@ -12,22 +12,27 @@
 
     <input type="number" formControlName='age' placeholder="Age"/>
 
-        <select formControlName='job_id'>
+        <select formControlName='job_id' id='test'>
           <option value=''>Select occupation</option>
 
         <!--ngFor HAS to be LET "random var" of "data type like jobs:something"  -->
           <option *ngFor='let job of jobs' value="{{job.id}}">{{job.name}}</option>
         </select>
 
-      <button [disabled]='registerForm.status === "INVALID"' type="submit">register</button>
+      <button [disabled]='registerForm.status === "INVALID"' type="submit" class="button_container">
+      <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+       <rect class="text_highlight" height="60" width="320" />
+      </svg>
+       <div class="text">register</div>
+      </button>
       
     </form>
 
   </div> <!-- close of input forms -->
 
-  <a href='/encounters'>Next</a>
+  <a routerLink='/encounters'>Next</a>
 
-  <a href=' '>Home</a>
+  <a routerLink='/'>Home</a>
 
 </div>   
 
