@@ -4,6 +4,8 @@ import { Job } from '../../models/job';
 import { NewColonist } from '../../models/colonist';
 import { ColonistService } from '../../services/colonist';
 import { FormControl, FormGroup, Validators, ValidatorFn } from '@angular/forms';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-register',
@@ -24,7 +26,8 @@ export class RegisterComponent implements OnInit {
   });
 
   constructor(private jobService: JobService, 
-    private colonistService: ColonistService
+    private colonistService: ColonistService,
+    private router:Router
   ) { }
 
   async ngOnInit() {
@@ -40,6 +43,8 @@ export class RegisterComponent implements OnInit {
     }
 
     const colonist = await this.colonistService.registerColonist(newColonist);
+    this.router.navigate(['encounters']);
+
   }
 
   private noNumber(validNameRegex): ValidatorFn {
