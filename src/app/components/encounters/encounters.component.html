@@ -1,12 +1,12 @@
-<div class='global_container'>
-   <h1> report encounter </h1>
+ <div class='global_container'>
+    <h1> report encounter </h1>
    <p class='encounter_action'> tell me what happened </p>
 
-  <ul ng-repeat="date in reports | orderBy: 'date':true">
+  <ul>
     <li *ngFor='let report of reports'>{{report.date}}<span>{{report.atype}}</span>
       <p>{{report.action}}</p>
     <li>
-  </ul> 
+  </ul>   
 
-    <p><a routerLink='/report'>report</a><p>
+    <p><a routerLink='/report'>report</a></p>
 </div>

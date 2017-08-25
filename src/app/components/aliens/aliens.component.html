@@ -1,7 +1,7 @@
 <div class='global_container'>
   <div class='input_forms'>
 
-    <form [formGroup]='registerForm' novalidate (submit)='registerAlien()'>    
+    <form [formGroup]='createAlien' novalidate (submit)='registerAlien()'>    
       <input type="text" formControlName='type' placeholder="type"/>
       <input type="text" formControlName='submitted_by' placeholder="submitted_by"/>
       <input type="number" formControlName='id' placeholder="id"/>  

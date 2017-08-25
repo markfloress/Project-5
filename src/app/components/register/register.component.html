@@ -9,10 +9,13 @@
       <!--formcontrolname grabs and must match wat was implemented on the typescript file registerForm.  -->
 
     <input type="text" formControlName='name' placeholder="Name"/>
+    <p>(Please enter your name with a minimum of two characters and no numbers)</p>
 
     <input type="number" formControlName='age' placeholder="Age"/>
+    <p>(Please enter your age)</p>
+    
 
-        <select formControlName='job_id' id='test'>
+        <select formControlName='job_id'>
           <option value=''>Select occupation</option>
 
         <!--ngFor HAS to be LET "random var" of "data type like jobs:something"  -->
@@ -21,7 +24,7 @@
 
       <button [disabled]='registerForm.status === "INVALID"' type="submit" class="button_container">
       <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
-       <rect class="text_highlight" height="60" width="320" />
+        <rect class="text_highlight" height="60" width="320" /> 
       </svg>
        <div class="text">register</div>
       </button>
