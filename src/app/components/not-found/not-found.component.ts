@@ -12,7 +12,3 @@ export class NotFoundComponent implements OnInit {
   ngOnInit() {
   }
 }
-
-// setTimeout(function () {
-//    window.location.href = "/";
-// }, 2000);

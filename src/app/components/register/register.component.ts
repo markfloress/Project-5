@@ -65,9 +65,6 @@ export class RegisterComponent implements OnInit {
 
 
 
-
-
-
 // removeListItem(item){
 //   this.data = this.data.filter(li => li !== item);
 // }

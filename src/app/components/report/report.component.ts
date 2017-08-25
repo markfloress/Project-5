@@ -41,34 +41,8 @@ export class ReportComponent implements OnInit {
       action:       this.reportForm.get('action').value,
       colonist_id:  '10'
     }
-    console.log(this.colonistService.getStoredColonist().id.toString())
+    // console.log(this.colonistService.getStoredColonist().id.toString())
     const report = await this.reportService.newReport(newReport);
     this.router.navigate(['encounters']);
   }
 }
-
-
-
-//  registerForm = new FormGroup({
-//     type: new FormControl('', [Validators.required]),
-//     submitted_by: new FormControl('', [Validators.required]),
-//     id: new FormControl('', [Validators.required]),
-//     description: new FormControl('', [Validators.required]),
-//   });
-
-  // constructor(private alienService: AlienService) { }
-
-  // async ngOnInit() {
-  // }
-
-  // async registerAlien(){
-  //   const newAlienPost: NewAlien = {
-  //     type:         this.registerForm.get('type').value,
-  //     submitted_by: this.registerForm.get('submitted_by').value,
-  //     id:           this.registerForm.get('id').value,
-  //     description:  this.registerForm.get('description').value,
-  //   }
-
-    // const alien = await this.alienService.registerAlien(newAlienPost);
-//   }
-// }
