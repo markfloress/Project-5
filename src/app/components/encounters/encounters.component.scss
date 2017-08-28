@@ -1,6 +1,10 @@
 .global_container{
   overflow: hidden;
 
+  h1{
+    font-size: 55px;
+  }
+
   .encounter_action{
     color: hotpink;
     margin: 0;
@@ -16,10 +20,16 @@
     overflow-x: hidden;
     margin: 0;
     list-style: none;
+    margin-top: 15px;
 
     li{
       color: white;
       padding-top: 30px;
+
+      p{
+        word-wrap: normal;
+        padding-right: 10px;
+      }
 
       span{
         font-family: SPACECRAFT;
@@ -36,3 +46,12 @@
 ::-webkit-scrollbar{
       display: none;
     }
+
+button{
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  margin-top: 20px;
+  width: 100%;
+}
