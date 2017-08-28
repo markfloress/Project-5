@@ -1,0 +1,56 @@
+.global_container{
+  width: 100%;
+
+  h1{
+    margin: 0;
+  }
+
+  .input_forms{
+    height: 300px;
+  }
+
+  select{
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    height: 30px;
+  }
+
+  textarea{
+    width: 68%;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: block;
+  }
+
+  button{
+    margin: 0 auto;
+    display: flex;
+    margin-top: 30%;
+    width: 100px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+  }
+}
+
+.report_anchor_tags{
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a{
+    text-decoration: none;
+  }
+
+  p{
+    a{
+      color: magenta;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

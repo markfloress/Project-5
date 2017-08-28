@@ -1,4 +1,7 @@
-<div class='global_container'>   
+<div class='global_container'>  
+  
+  <h1>Report what you saw</h1>
+
   <div class='input_forms'>
 
   <form [formGroup]='reportForm' (submit)='newReport()' novalidate>
@@ -11,10 +14,10 @@
   </form> 
 
   </div>
+
+  <div class='report_anchor_tags'>
+    <a routerLink='/encounters'>Go back to encounters</a>
+    <p>Click <a routerLink='/aliens'>Here</a> if you dont see the alien type</p>
+  </div>
+
 </div>
-
-  {{ reportForm.value | json }}
-  {{ reportForm.status | json }}
-
-  <a href='/encounters'>Next</a>
-  <a href=' '>Home</a>

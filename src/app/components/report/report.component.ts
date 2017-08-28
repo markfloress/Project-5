@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-report',
   templateUrl: './report.component.html',
-  styles: [],
+  styleUrls: ['report.component.scss'],
   providers:[
     AlienService,
     ReportService

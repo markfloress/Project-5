@@ -1,0 +1,36 @@
+@import 'fonts';
+@import 'theme';
+
+body{
+  margin: 0;
+  background-color: black;
+  width: 100vw;
+}
+
+ .global_container{
+  background: url('../asset/images/mars.jpg');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+h1{
+  margin: 0 auto;
+  width: inherit;
+  color: $primary-color;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 55px;
+  padding-top: 50px;
+  font-family: SF_Distant_Galaxy;
+}
+
+p{
+  font-family: CF_Spaceship;
+  color: $primary-color
+}
+
+a{
+  text-transform: none;
+  color: $primary-color;
+}
