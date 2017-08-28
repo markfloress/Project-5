@@ -1,7 +1,9 @@
 <div class='global_container'>
 
-  <h1> register </h1>
+    <a routerLink='/'>Return Home</a>  
 
+  <h1> register </h1>
+  
   <div class='input_forms'>
 
     <form [formGroup]='registerForm' novalidate (submit)='registerColonist()'>
@@ -28,14 +30,12 @@
       </svg>
        <div class="text">register</div>
       </button>
+
+    <!-- <a routerLink='/'>Return Home</a> -->
       
     </form>
-
+    
   </div> <!-- close of input forms -->
-
-  <a routerLink='/encounters'>Next</a>
-
-  <a routerLink='/'>Home</a>
 
 </div>   
 
