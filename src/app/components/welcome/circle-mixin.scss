@@ -1,0 +1,7 @@
+@mixin circle($circleSize){
+  width: $circleSize;
+  height: $circleSize;
+  -webkit-border-radius: $circleSize/2;
+     -moz-border-radius: $circleSize/2;
+          border-radius: $circleSize/2;
+}

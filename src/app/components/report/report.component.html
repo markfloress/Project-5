@@ -6,7 +6,7 @@
         <option value='blank'>Select occupation</option> 
         <option *ngFor='let alien of aliens' value="{{alien.type}}">{{alien.type}}</option> 
       </select>
-    <textarea formControlName='action' type='action'></textarea>  
+    <textarea formControlName='action' type='action'>What was the damage</textarea>  
     <button type="submit">report</button>
   </form> 
 

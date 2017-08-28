@@ -1,8 +1,11 @@
+@import 'circle-mixin';
+
 .global_container{
   background: url('../../../../asset/images/mars.png');
   background-size: cover;  
   width: 100vw;
   height: 100vh;
+  position: relative;
 }
 
 h1{
@@ -24,4 +27,50 @@ p{
 
 a{
   background-color: white;
+}
+
+.pulse-css{
+  border: none;
+  outline: none;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	@include circle(25px);
+	background: tomato;
+	position: relative;
+	&:before,
+	&:after{
+		content: '';
+		@include circle(25px);
+		background-color: tomato;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+		transform: scale(0.5);
+		transform-origin: center center;
+		animation: pulse-me 3s linear infinite;
+	}
+	&:after{
+		animation-delay: 2s;
+  }
+}
+
+@keyframes pulse-me{
+	0%{
+		transform: scale(0.5);
+		opacity: 0;
+	}
+	50%{
+		opacity: 0.1;
+	}
+	70%{
+		opacity: 0.09;
+	}
+	100%{
+		transform: scale(5);
+		opacity: 0;
+	}
 }
