@@ -38,10 +38,16 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Screenshots:
 WELCOME PAGE
-![screencapture-localhost-4200-1503935433709](https://user-images.githubusercontent.com/29613498/29781505-41f653fe-8bce-11e7-873e-fa1153f5917e.png)
+![screencapture-localhost-4200-1503965951634](https://user-images.githubusercontent.com/29613498/29805448-b9fdc574-8c3e-11e7-96e4-43fbb4bec298.png)
 
 REGISTER PAGE
-![screencapture-localhost-4200-register-1503935462469](https://user-images.githubusercontent.com/29613498/29781522-4cb06bc2-8bce-11e7-8753-ce6ec5061688.png)
+![screencapture-localhost-4200-register-1503966004352](https://user-images.githubusercontent.com/29613498/29805456-bd22c43e-8c3e-11e7-9a62-eb7f6680b0a3.png)
 
 ENCOUNTER PAGE
-![screencapture-localhost-4200-encounters-1503935482390](https://user-images.githubusercontent.com/29613498/29781523-4ea6d39e-8bce-11e7-85f5-f26a9b352c90.png)
+![screencapture-localhost-4200-encounters-1503966017720](https://user-images.githubusercontent.com/29613498/29805458-be76c326-8c3e-11e7-8789-9c7f92c8f8cf.png)
+
+REPORT PAGE
+![screencapture-localhost-4200-report-1503966028085](https://user-images.githubusercontent.com/29613498/29805459-bfc8099c-8c3e-11e7-8991-b698b387518a.png)
+
+ALIEN PAGE *BONUS* (Allows the user to be able to add a new alien type to the API)
+![screencapture-localhost-4200-aliens-1503966039585](https://user-images.githubusercontent.com/29613498/29805460-c14a45f0-8c3e-11e7-881e-db80054b0bab.png)
