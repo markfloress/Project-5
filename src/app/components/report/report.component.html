@@ -6,7 +6,7 @@
 
   <form [formGroup]='reportForm' (submit)='newReport()' novalidate>
       <select formControlName='atype' class="selector">
-        <option value='blank'>Select occupation</option> 
+        <option value='blank'>Select an alien</option> 
         <option *ngFor='let alien of aliens' value="{{alien.type}}">{{alien.type}}</option> 
       </select>
     <textarea formControlName='action' type='action'>What was the damage</textarea>  
