@@ -6,7 +6,7 @@ import { Alien, NewAlien } from '../../models/alien';
 @Component({
   selector: 'app-aliens',
   templateUrl: './aliens.component.html',
-  styles: [],
+  styleUrls: ['./aliens.component.scss'],
   providers: [
     AlienService,
   ]

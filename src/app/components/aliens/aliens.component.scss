@@ -1,0 +1,48 @@
+.global_container{
+
+  .input_forms{
+    display: flex;
+    justify-content: center;
+
+    input{
+      border: none; 
+      border-bottom: 1px darkgray solid;
+      color: white;
+      background-color: transparent;
+      width: 90%;
+      height: 50px;
+      font-size: 26px;
+      padding-left: 20px;
+      margin-top: 50px;
+      text-transform: capitalize;
+    }
+
+    button{
+      text-transform: uppercase;
+      text-align: center;
+      display: block;
+      width: 200px;
+      margin: 0 auto;
+      background-color: transparent;
+      border: 1px darkgray solid;
+      border-radius: 20px;
+      font-size: 20px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+  }
+
+  .nav_buttons{
+    display: flex;
+    justify-content: space-around;
+
+    a{
+      border: 1px darkgray solid;
+      padding: 10px 30px;
+      border-radius: 20px;
+      background-color: transparent;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
+}

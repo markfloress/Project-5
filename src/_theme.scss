@@ -1,1 +1,9 @@
 $primary-color: white;
+
+//              MIXINS
+
+@mixin desktop {
+  @media (min-width: 700px) {
+    @content;
+  }
+}

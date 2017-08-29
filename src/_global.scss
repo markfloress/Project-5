@@ -23,14 +23,17 @@ h1{
   font-size: 55px;
   padding-top: 50px;
   font-family: SF_Distant_Galaxy;
+  font-weight: normal;
 }
 
 p{
   font-family: CF_Spaceship;
-  color: $primary-color
 }
 
 a{
   text-transform: none;
-  color: $primary-color;
+}
+
+input, select, button, a, p, li{
+  color: $primary-color;  
 }

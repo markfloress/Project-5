@@ -1,3 +1,5 @@
+@import '../../../theme.scss';
+
 .global_container{
   overflow: hidden;
 
@@ -14,7 +16,6 @@
 
   ul{
     height: 450px;
-    color: white;
     width: 95%;
     overflow: scroll;
     overflow-x: hidden;
@@ -22,8 +23,11 @@
     list-style: none;
     margin-top: 15px;
 
+    @include desktop{
+      margin-left: 100px;
+    }
+
     li{
-      color: white;
       padding-top: 30px;
 
       p{
@@ -51,9 +55,13 @@ button{
   font-weight: bold;
   font-size: 20px;
   text-transform: uppercase;
+  background-color: transparent;
+  border: 1px darkgray solid;
   margin: 0 auto;
   display: block;
   border-radius: 20px;
   margin-top: 20px;
   width: 200px;
+  color: white;
+  outline: none;
 }

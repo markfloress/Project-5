@@ -1,4 +1,7 @@
 <div class='global_container'>
+
+  <h1> Alien whaaaat? </h1>
+
   <div class='input_forms'>
 
     <form [formGroup]='createAlien' novalidate (submit)='registerAlien()'>    
@@ -10,6 +13,8 @@
     </form> 
   </div> <!-- close of input forms -->
 
-  <a href='/encounters'>Back</a>
-  <a href=' '>Home</a>
+  <div class='nav_buttons'>
+    <a routerLink='/report'>Back</a>
+    <a routerLink='/' class='home_button'>Home</a>
+  </div>
 </div>   

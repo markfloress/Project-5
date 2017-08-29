@@ -1,3 +1,5 @@
+@import '../../../theme.scss';
+
 .global_container{
   width: 100%;
 
@@ -26,13 +28,17 @@
   }
 
   button{
-    margin: 0 auto;
-    display: flex;
-    margin-top: 30%;
-    width: 100px;
     font-weight: bold;
+    font-size: 20px;
     text-transform: uppercase;
-
+    background-color: transparent;
+    border: 1px darkgray solid;
+    margin: 0 auto;
+    display: block;
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 200px;
+    outline: none;
   }
 }
 
@@ -40,7 +46,7 @@
   height: 150px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 
   a{
     text-decoration: none;
@@ -52,5 +58,19 @@
       margin: 0;
       padding: 0;
     }
+  }
+}
+
+@include desktop{
+  .report_anchor_tags{
+    select{
+      width: 100px;
+      height: 300px;
+    }
+  }
+
+  textarea{
+    height: 400px;
+    display: block;
   }
 }
