@@ -35,10 +35,6 @@
         padding-right: 10px;
       }
 
-      span{
-        font-family: SPACECRAFT;
-      }
-
       ::before{
         content: '- ';
         padding-left: 10px;
@@ -62,6 +58,5 @@ button{
   border-radius: 20px;
   margin-top: 20px;
   width: 200px;
-  color: white;
   outline: none;
 }

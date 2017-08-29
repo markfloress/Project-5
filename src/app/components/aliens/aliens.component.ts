@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators, ValidatorFn } from '@angular/forms';
 import { AlienService } from '../../services/alien';
 import { Alien, NewAlien } from '../../models/alien';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-aliens',
@@ -20,7 +22,7 @@ export class AliensComponent implements OnInit {
     description: new FormControl('', [Validators.required]),
   });
 
-  constructor(private alienService: AlienService) { }
+  constructor(private alienService: AlienService, private router:Router) { }
 
   async ngOnInit() {
   }
@@ -34,5 +36,6 @@ export class AliensComponent implements OnInit {
     }
 
     const alien = await this.alienService.registerAlien(newAlienPost);
+    this.router.navigate(['report']);
   }
 }

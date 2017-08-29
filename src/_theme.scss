@@ -1,6 +1,18 @@
 $primary-color: white;
 
+$header_font: SF_Distant_Galaxy, sans-serif;
+$alien_font: SPACECRAFT, sans-serif;
+$text_font: CF_Spaceship, sans-serif;
+$button_font: 'Roboto Condensed', sans-serif;
+
+$welcome_background_image: url('../../../../asset/images/mars.png');
+$site_background_image: url('../asset/images/mars.jpg');
+
+
+
 //              MIXINS
+
+
 
 @mixin desktop {
   @media (min-width: 700px) {
