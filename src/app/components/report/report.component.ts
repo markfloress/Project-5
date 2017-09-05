@@ -29,7 +29,7 @@ export class ReportComponent implements OnInit {
 
 
 
-  async ngOnInit() {                //ES6 same as promise
+  async ngOnInit() {              
     
     this.aliens = await this.alienService.getAliens();
   }

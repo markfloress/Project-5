@@ -53,32 +53,4 @@ export class RegisterComponent implements OnInit {
       return forbiddenName ? {'forbiddenName' : { value: control.value}} : null;
     }
   }
-
-  // private validAge(validAgeRegex): ValidatorFn {
-  //   return (control): {[key: string]: any} =>{
-  //     const forbiddenAge = validAgeRegex.test(control.value);
-  //     return forbiddenAge ? {'forbiddenAge' : { value: control.value}} : null;
-  //   }
-  // }
 }
-
-
-
-
-// removeListItem(item){
-//   this.data = this.data.filter(li => li !== item);
-// }
-// this.data is the list and that is removing an item from the list
-
-
-// setInterval(()=>{
-//       this.data.push({text: `encounter ${Math.random()}`})
-//     }, 1000);
-
-
-// <input #text/><button (click)='addItem(text.value)'></button>
-// addItem(item){
-//   this.data.push({ text: item })
-// }
-
-// this will grab the input value and add it on click from button
