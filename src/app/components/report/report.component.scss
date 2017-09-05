@@ -17,14 +17,21 @@
     margin: 0 auto;
     margin-top: 50px;
     height: 30px;
+    border: none; 
+    border-bottom: 1px darkgray solid;
+    background-color: transparent;
   }
 
   textarea{
     width: 68%;
+    color: white;
     height: 100px;
     margin: 0 auto;
     margin-top: 10px;
     display: block;
+    border: none; 
+    border: 1px darkgray solid;
+    background-color: transparent;
   }
 
   button{
