@@ -17,7 +17,6 @@ export const routerTransition = trigger('routerTransition', [
     ])
   ])
 ]) 
-localStorage.getItem
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

@@ -41,7 +41,6 @@ export class ReportComponent implements OnInit {
       action:       this.reportForm.get('action').value,
       colonist_id:  '10'
     }
-    // console.log(this.colonistService.getStoredColonist().id.toString())
     const report = await this.reportService.newReport(newReport);
     this.router.navigate(['encounters']);
   }
